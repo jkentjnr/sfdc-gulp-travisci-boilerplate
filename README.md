@@ -24,6 +24,8 @@ If you just want to evaluate TravisCI functionality, you can skip setting and co
 Create a repo and connect to TravisCI.
 Configure TravisCI environment variables under Settings.
 
+Please note: This project uses gulp 4.0.  This is pre-release but, in the main, has been stable for over a year.  See more about using gulp 4.0 [here](https://demisx.github.io/gulp4/2015/01/15/install-gulp4.html).
+
 ## Commands
 
 ### deploy (recent changes)
