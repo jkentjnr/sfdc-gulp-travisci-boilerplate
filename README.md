@@ -1,9 +1,10 @@
 # sfdc-gulp-travisci-boilerplate
 
-[![Build Status](https://travis-ci.org/jkentjnr/sfdc-gulp-travisci-boilerplate.svg?branch=master)](https://travis-ci.org/jkentjnr/sfdc-gulp-travisci-boilerplate)
-
 This is a straightforward boilerplate for anyone who wants to quickly start developing for Salesforce using [gulp](http://gulpjs.com/), [travis-ci](https://travis-ci.com) and some other little gizmos ([gulp-force-developer](https://github.com/jkentjnr/gulp-force-developer) & [nforce](https://github.com/kevinohara80/nforce)).
 
+[![Build Status](https://travis-ci.org/jkentjnr/sfdc-gulp-travisci-boilerplate.svg?branch=master)](https://travis-ci.org/jkentjnr/sfdc-gulp-travisci-boilerplate)
+
+To see an example of the TravisCI functionality, click the build status button above.  This project is hooked into TravisCI and everytime there is a commit, TravisCI executes the `gulp test` command and publishes the output of the test process.
 
 ## Getting Started
 
