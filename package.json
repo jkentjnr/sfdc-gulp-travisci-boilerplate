@@ -1,0 +1,38 @@
+{
+  "name": "sfdc-gulp-travisci-boilerplate",
+  "version": "1.0.0",
+  "description": "A gulp-powered, TravisCI-enabled SFDC project boilerplate.",
+  "main": "index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate.git"
+  },
+  "keywords": [
+    "sfdc",
+    "salesforce",
+    "gulp",
+    "travisci",
+    "boilerplate"
+  ],
+  "author": "James Kent",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate/issues"
+  },
+  "homepage": "https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate#readme",
+  "devDependencies": {
+    "gulp": "gulpjs/gulp#4.0",
+    "gulp-force-developer": "^0.1.5",
+    "gulp-util": "^3.0.7",
+    "nforce": "^1.3.3",
+    "nforce-metadata": "^1.0.6"
+  },
+  "forceDeveloperConfig": {
+    "projectBaseDirectory": "src",
+    "outputPackageZip": "./.package/package.zip",
+    "apiVersion": 35
+  }
+}

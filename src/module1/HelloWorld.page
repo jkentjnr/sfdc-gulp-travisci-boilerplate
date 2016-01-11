@@ -1,0 +1,7 @@
+<apex:page controller="HelloWorldController" tabStyle="Account">
+    <apex:form>
+        <apex:pageBlock title="Congratulations {!$User.FirstName}">
+            Account Name: {!AccountName}
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
