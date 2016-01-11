@@ -18,7 +18,7 @@ Create a connected app (OAuth) and configure package.json or environment variabl
 
 Setup an empty Salesforce instance for development.
 Create a connected app (OAuth) and configure package.json or environment variables.
-** If you just want to evaluate TravisCI functionality, you can skip setting up a development instance.
+If you just want to evaluate TravisCI functionality, you can skip setting and configuring up a development instance.
 
 Create a repo and connect to TravisCI.
 Configure TravisCI environment variables under Settings.
