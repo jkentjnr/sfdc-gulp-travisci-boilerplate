@@ -6,11 +6,22 @@ This is a straightforward boilerplate for anyone who wants to quickly start deve
 
 To see an example of the TravisCI functionality, click the build status button above.  This project is hooked into TravisCI and everytime there is a commit, TravisCI executes the `gulp test` command and publishes the output of the test process.
 
+## Components and their Role
+
+ - [gulp](http://gulpjs.com/): Used to handle deployments to dev and to execute tests.
+ - [travis-ci](https://travis-ci.com): Cloud-based continous integration. Runs a test build on each commit.
+ - [gulp-force-developer](https://github.com/jkentjnr/gulp-force-developer): Enables a project to use any folder structure and still publish to Salesforce; breaks away from the standard package project folder structure.  Can also detect changes in files and facilitate partial package deployments; useful in development.
+ - [nforce](https://github.com/kevinohara80/nforce) & [nforce-metadata](https://github.com/kevinohara80/nforce): @kevinohara80 excellent libraries are used to deploy to development and test.
+ 
+#### Included Scripts 
+
+ - nForceDeployer (./bin/build): Handles the deployments to development and test.  Renders the deployment report to the gulp console.
+
 ## Getting Started
 
 Clone this repo and execute the below commands:
 
-	$ git clone https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate.git <<projectName>>
+    $ git clone https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate.git <<projectName>>
     $ cd <<projectName>>
     $ npm install
 
