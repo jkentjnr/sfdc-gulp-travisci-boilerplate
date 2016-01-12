@@ -29,6 +29,7 @@
   },
   "homepage": "https://github.com/jkentjnr/sfdc-gulp-travisci-boilerplate#readme",
   "devDependencies": {
+    "bluebird": "^3.1.1",
     "gulp": "gulpjs/gulp#4.0",
     "gulp-force-developer": "^0.1.5",
     "gulp-util": "^3.0.7",

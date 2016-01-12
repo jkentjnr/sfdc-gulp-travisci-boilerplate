@@ -44,14 +44,14 @@ Deploys the most recent changes to development.
 
     $ gulp
     or
-    $ npm run env:deploy
+    $ npm run env:deploy (*NIX only)
 
 ### deploy (full package)
 Deploys the full package to development.
 
     $ gulp deploy-all
     or
-    $ npm run env:deploy-all
+    $ npm run env:deploy-all (*NIX only)
 
 ### reset
 Clears the file change cache.
@@ -64,7 +64,7 @@ Does not commit any changes.
 
     $ gulp test
     or
-    $ npm run env:test
+    $ npm run env:test (*NIX only)
 
 ## Configuration
 
@@ -98,7 +98,9 @@ package.json
 
 #### Environment Settings
 
-Create an `.env` file with the below configuration. Execute using 'npm run env:test', 'npm run env:deploy' or 'npm run env:deploy-all'.
+*NIX only: Create an `.env` file with the below configuration. Execute using 'npm run env:test', 'npm run env:deploy' or 'npm run env:deploy-all'.
+
+Alternatively, look at foreman.
 
 ```
 SFDC_TEST_USERNAME=james.kent@travisci.vertic.com.au
