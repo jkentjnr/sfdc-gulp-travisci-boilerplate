@@ -107,7 +107,7 @@ gulp.task('default', gulp.series(
 ));
 
 // Deploys the full package to DEV
-gulp.task('deploy', gulp.series(
+gulp.task('deploy-all', gulp.series(
 	'force-package-config',
 	'force-package-all',
 	'force-zip',

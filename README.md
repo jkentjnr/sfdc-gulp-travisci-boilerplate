@@ -43,11 +43,15 @@ Please note: This project uses gulp 4.0.  This is pre-release but, in the main, 
 Deploys the most recent changes to development.
 
     $ gulp
+    or
+    $ npm run env:deploy
 
 ### deploy (full package)
 Deploys the full package to development.
 
-    $ gulp deploy
+    $ gulp deploy-all
+    or
+    $ npm run env:deploy-all
 
 ### reset
 Clears the file change cache.
@@ -59,10 +63,12 @@ Execute a full test against the TEST instance.
 Does not commit any changes.
 
     $ gulp test
+    or
+    $ npm run env:test
 
 ## Configuration
 
-Either make changes to the package.json or set environment variables.
+Either make changes to the package.json or set environment variables.  Environment settings trump package.json settings.
 
 #### package.json
 
@@ -90,18 +96,20 @@ package.json
     -- (See [repo](https://github.com/jkentjnr/gulp-force-developer) for more options)
 ```
 
-#### Environment Settings (Terminal / Bash)
+#### Environment Settings
+
+Create an `.env` file with the below configuration. Execute using 'npm run env:test', 'npm run env:deploy' or 'npm run env:deploy-all'.
 
 ```
-export SFDC_TEST_USERNAME=james.kent@travisci.vertic.com.au
-export SFDC_TEST_PASSWORD=qwerty
-export SFDC_TEST_TOKEN=jKcdCgrqwertys6ywb8XwCxutO
-export SFDC_TEST_OAUTH_CLIENTID=qwertyZL0ppGP5UrAp2lygTnOt9ZS2jylYIrybVQ3253StPRH56CQds04pzLyzlMNVmKHVXUcLAdUap_MhSIXe
-export SFDC_TEST_OAUTH_SECRETID=qwerty1790270708891
+SFDC_TEST_USERNAME=james.kent@travisci.vertic.com.au
+SFDC_TEST_PASSWORD=qwerty
+SFDC_TEST_TOKEN=jKcdCgrqwertys6ywb8XwCxutO
+SFDC_TEST_OAUTH_CLIENTID=qwertyZL0ppGP5UrAp2lygTnOt9ZS2jylYIrybVQ3253StPRH56CQds04pzLyzlMNVmKHVXUcLAdUap_MhSIXe
+SFDC_TEST_OAUTH_SECRETID=qwerty1790270708891
 
-export SFDC_DEV_USERNAME=james.kent@development.vertic.com.au
-export SFDC_DEV_PASSWORD=qwerty
-export SFDC_DEV_TOKEN=qwertySKDs6ywb8XwCxutO
-export SFDC_DEV_OAUTH_CLIENTID=qwertyuL0ppGP5UrAp2lygTnOt9ZS2jylYIrybVQ3253StPRH56CQds04pzLyzlMNVmKHVXUcLAdUap_MhSIXe
-export SFDC_DEV_OAUTH_SECRETID=q12w3e4r790270708891
+SFDC_DEV_USERNAME=james.kent@development.vertic.com.au
+SFDC_DEV_PASSWORD=qwerty
+SFDC_DEV_TOKEN=qwertySKDs6ywb8XwCxutO
+SFDC_DEV_OAUTH_CLIENTID=qwertyuL0ppGP5UrAp2lygTnOt9ZS2jylYIrybVQ3253StPRH56CQds04pzLyzlMNVmKHVXUcLAdUap_MhSIXe
+SFDC_DEV_OAUTH_SECRETID=q12w3e4r790270708891
 ```

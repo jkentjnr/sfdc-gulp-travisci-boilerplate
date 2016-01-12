@@ -4,7 +4,12 @@
   "description": "A gulp-powered, TravisCI-enabled SFDC project boilerplate.",
   "main": "index.js",
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "deploy": "gulp",
+    "deploy-all": "gulp deploy",
+    "env:test": "eval $(cat .env) gulp test || true",
+    "env:deploy": "eval $(cat .env) npm run deploy || true",
+    "env:deploy-all": "eval $(cat .env) npm run deploy-all || true"
   },
   "repository": {
     "type": "git",
